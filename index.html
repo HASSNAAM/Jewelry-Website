@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <title>Jewelry Website</title>
+    </head>
+
+    <body>
+        <button id="scroll-to-top" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <div class="top">
+            <p>ENJOY 15% OFF WITH TWO OR MORE ITEMS & FREE SHIPPING ON ALL ORDERS.</p>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">english <i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">USD <i class="fas fa-angle-down"></i></a></li>
+            </ul>
+        </div>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="navbar-nav">
+            <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt=""></a>
+        </div>
+        <button class="navbar-toggler icon-bar" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto list">
+                <li class="nav-item active mr-3 ml-5 home">
+                    <a class="nav-link" href="#">Home <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Shop</a>
+                        <a href="#">Product</a>
+                        <a href="#">Other</a>
+                    </div>
+                </li>
+                <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#">Jewelry <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">New in</a>
+                        <a href="#">Curated Shops</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Bags</a>
+                        <a href="#">Watches</a>
+                    </div>
+                </li>
+                <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#">Handbags <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Shop By Product</a>
+                        <a href="#">Shop By Collection</a>
+                    </div>
+                </li>
+                <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#">Accessories <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Shop By Product</a>
+                        <a href="#">Shop By Collection</a>
+                        <a href="#">Curated Shops</a>
+                        <a href="#">Handbags</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Love</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Super Sale</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-nav ml-auto icon-nav">
+            <a href="#" class="navbar-icon">
+                <i class="fas fa-search" style="margin-right: 10px;"></i>
+            </a>
+            <div class="d-none d-md-block">
+                <span class="navbar-text search">Search</span>
+            </div>
+            <a href="#" class="navbar-icon">
+                <i class="far fa-user"></i>
+                <div class="form-content">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Sign In</button>
+                    </form>
+                </div>
+            </a>
+            <a href="#" class="navbar-icon">
+                <i class="far fa-heart"></i>
+                <span class="badge badge-pill badge-dark num">0</span>
+            </a>
+            <a href="#" class="navbar-icon">
+                <i class="fa fa-shopping-cart"></i>
+                <div class="tooltip-content">Your cart is currently empty</div>
+                <span class="badge badge-pill badge-dark num two">0</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+        <div id="carouselExampleControls" class="carousel slide header" data-ride="carousel">
+            <div class="layout"></div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="des">
+                        <h1>latest gold <br>earrings design</h1>
+                        <div>
+                            <p>free shipping available! - limited <br class="break"> time only</p>
+                            <button>shop now <i class="fas fa-angle-right icon"></i></button>
+                        </div>
+                    </div>
+                    <img style="height: 96vh;" class="d-block w-100" src="images/home3-slide1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <div class="des">
+                        <h1>Italian gold <br>bracelets jewelry</h1>
+                        <div>
+                            <p>sterling silver and 14k gold</p>
+                            <button>shop now <i class="fas fa-angle-right icon"></i></button>
+                        </div>
+                    </div>
+                    <img style="height: 96vh;" class="d-block w-100" src="images/home3-slide2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <div class="des">
+                        <h1>new women's <br>handbags</h1>
+                        <div>
+                            <p>with today's most popular styles</p>
+                            <button>shop now <i class="fas fa-angle-right icon"></i></button>
+                        </div>
+                    </div>
+                    <img style="height: 96vh;" class="d-block w-100" src="images/home3-slide3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a style="z-index: 55;" class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a style="z-index: 55;" class="carousel-control-next" href="#carouselExampleControls" role="button"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <div class="dots"><span></span><span></span><span></span></div>
+        </div>
+        <section id="section-two">
+            <div class="row pro">
+                <div class="col-md-6 shop1">
+                    <div class="content">
+                        <small>Best Price</small>
+                        <h2>Jaroti Range of Women's Earrings</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt.</p>
+                        <button>Shop Now</button>
+                    </div>
+                    <div>
+                        <img src="images/banner-5.jpg" alt="banner" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6 shop2">
+                    <div class="img">
+                        <img src="images/banner-4.jpg" alt="banner" class="img-fluid">
+                    </div>
+                    <div class="content">
+                        <small>Get Free Shipping & Returns</small>
+                        <h2>New Handbags</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="new">
+            <div class="content">
+                <h2>NEW ARRIVALS</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+                <button>shop now</button>
+            </div>
+            <div class='hot'>
+                <div class="imge" style="background-image: url(images/hot.jpg);">
+                    <small>hot</small>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-repeat"></i>
+                    </div>
+                    <button id="btn2">add to cart</button>
+                </div>
+                <p>gold-plated pearl drop earrings</p>
+                <strong>$179.99</strong>
+            </div>
+            <div class='hot'>
+                <div class="imge" style="background-image: url(images/50.jpg);">
+                    <small>-50%</small>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-repeat"></i>
+                    </div>
+                    <button id="btn2">add to cart</button>
+                </div>
+                <p>pearl drop stud set of two</p>
+                <strong>$69.75 <span> $139.50</span></strong>
+            </div>
+            <div class='hot'>
+                <div class="imge" style="background-image: url(images/22.jpg);">
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-repeat"></i>
+                    </div>
+                    <button id="btn2">add to cart</button>
+                </div>
+                <p>double wave hoop earings</p>
+                <strong>$53.75</strong>
+            </div>
+        </div>
+
+        <div id="video-container">
+            <iframe id="video-background"
+                src="https://player.vimeo.com/video/543761013?muted=1&amp;autoplay=1&amp;loop=1&amp;transparent=0&amp;background=1&amp;app_id=122963"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="pexels-karolina-grabowska-7721703" data-ready="true" class="elementor-background-video-embed"></iframe>
+        <div class="description">
+            <h2>Silver & Gold <br> Hoop Earrings</h2>
+            <p>With a range of designs to discover. Shop your favourites here</p>
+        </div>
+            </div>
+        <div class="featears">
+            <h2>FEATURE PRODUCT</h2>
+            <div class="new">
+                <div class='hot'>
+                    <div class="imge" style="background-image: url(images/hot.jpg);">
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-repeat"></i>
+                        </div>
+                        <button id="btn2">add to cart</button>
+                    </div>
+                    <p>gold-plated pearl drop earrings</p>
+                    <strong>$179.99</strong>
+                </div>
+                <div class='hot'>
+                    <div class="imge" style="background-image: url(images/2.jpg);">
+                        <small>-7%</small>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-repeat"></i>
+                        </div>
+                        <button id="btn2">add to cart</button>
+                    </div>
+                    <p>Leaf Short Drop Earrings</p>
+                    <strong>$35.38<span> $38.24</span></strong>
+                </div>
+                <div class='hot'>
+                    <div class="imge" style="background-image: url(images/3.jpg);">
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-repeat"></i>
+                        </div>
+                        <button id="btn2">add to cart</button>
+                    </div>
+                    <p>Stacking Rings 5 Pack</p>
+                    <strong>$38.24</strong>
+                </div>
+                <div class='hot'>
+                    <div class="imge" style="background-image: url(images/4.jpg);">
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-repeat"></i>
+                        </div>
+                        <button id="btn2">buy product</button>
+                    </div>
+                    <p>Baguette Rings Set of Two Blue</p>
+                    <strong>$38.24</strong>
+                </div>
+                <div class='hot'>
+                    <div class="imge" style="background-image: url(images/5.jpg);">
+                        <small>-29%</small>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-repeat"></i>
+                        </div>
+                        <button id="btn2">add to cart</button>
+                    </div>
+                    <p>Gold Vermeil Chunky Bracelet</p>
+                    <strong>$69.75 <span>$98.65</span></strong>
+                </div>
+                <div class='hot'>
+                    <div class="imge" style="background-image: url(images/6.jpg);">
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-repeat"></i>
+                        </div>
+                        <button id="btn2">add to cart</button>
+                    </div>
+                    <p>Twisted Rope Bracelet</p>
+                    <strong>$38.24</strong>
+                </div>
+                <div class='hot'>
+                    <div class="imge" style="background-image: url(images/7.jpg);">
+                        <small>-7%</small>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-repeat"></i>
+                        </div>
+                        <button id="btn2">add to cart</button>
+                    </div>
+                    <p>London Charm Bracelet</p>
+                    <strong>$167.99 <span>$179.99</span></strong>
+                </div>
+                <div class='hot'>
+                    <div class="imge" style="background-image: url(images/8.jpg);">
+                        <small>-41%</small>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-repeat"></i>
+                        </div>
+                        <button id="btn2">add to cart</button>
+                    </div>
+                    <p>Gold-plated Pearl Necklace</p>
+                    <strong>$52.76 <span>$89.74</span></strong>
+                </div>
+            </div>
+        </div>
+        <div class="gift container">
+            <h2>FIND THE PERFECT GIFT</h2>
+            <div class="gifts row pt-3">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div>
+                        <img src="images/gift-1.jpg" alt="Gift">
+                        <h3>CAT EYE AND ROUND STYLES</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div>
+                        <img src="images/gift-2.jpg" alt="Gift">
+                        <h3>SILVER & GOLD NECKLACES & RINGS</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div>
+                        <img src="images/gift-3.jpg" alt="Gift">
+                        <h3>CROSS BODY BAGS</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div>
+                        <img src="images/gift-4.jpg" alt="Gift">
+                        <h3>THE BEST WATCHES FOR $3000</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sale">
+            <p>30% off end of Summer Edit. Limited time only. <a href="#">Shop Now</a></p>
+            <div class="brands">
+                <img src="images/logo-1-184x96.png" alt="Logo">
+                <img src="images/logo-2-184x96.png" alt="Logo">
+                <img src="images/logo-3-184x96.png" alt="Logo">
+                <img src="images/logo-4-184x96.png" alt="Logo">
+                <img src="images/logo-5-184x96.png" alt="Logo">
+                <img src="images/logo-6-184x96.png" alt="Logo">
+                <img src="images/logo-7-184x96.png" alt="Logo">
+            </div>
+        </div>
+        <footer>
+            <div class="foot-info">
+                <div>
+                    <h2>DELIVERY & RETURN</h2>
+                    <ul>
+                        <li>Check Order</li>
+                        <li>Delivery & Collection</li>
+                        <li>Careers</li>
+                        <li>Delivery Return</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>ABOUT</h2>
+                    <ul>
+                        <li>Our Brand</li>
+                        <li>Charity</li>
+                        <li>CSR</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>CUSTOMER SERVICES</h2>
+                    <ul>
+                        <li>Terms & Policies</li>
+                        <li>Contact Us</li>
+                        <li>Opening Hours</li>
+                        <li>Size Guides</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>NEWSLETTER SIGN UP</h2>
+                    <p>Enjoy 15% off* your first order when you sign up to our newsletter</p>
+                    <form>
+                        <input type="email" placeholder="Your e-mail address">
+                        <button type="submit">subscribe</button>
+                    </form>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="brands">
+                <img src="images/mega-menu-banner-1.jpg" alt="Logo">
+                <img src="images/mega-menu-banner-2.jpg" alt="Logo">
+                <img src="images/mega-menu-banner-3.jpg" alt="Logo">
+                <img src="images/mega-menu-banner-4.jpg" alt="Logo">
+                <img src="images/mega-menu-banner-5.jpg" alt="Logo">
+                <img src="images/mega-menu-banner-6.jpg" alt="Logo">
+                <img src="images/mega-menu-banner-7.jpg" alt="Logo">
+                <img src="images/mega-menu-banner-8.jpg" alt="Logo">
+            </div>
+            <div class="copy">
+                <p>© Jaroti. All Rights Reserved.</p>
+                <img src="images/payments.png" alt="payments">
+            </div>
+        </footer>
+        <!-- Bootstrap JS files -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
